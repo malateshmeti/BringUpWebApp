@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DashboardPage.css">
+</head>
+<body>
+       <!-- Banking Dashboard -->
+    <div id="dashboardPage" class="dashboard-hidden">
+        <div class="dashboard-navbar"> <b>Bringup:</b> Connecting Hands, Building Trust</div>
+
+        <div class="dashboard-container">
+            <!-- Existing Modules -->
+            <div class="dashboard-module" onclick="openModule('ElectricianMainModule')">
+                <div class="module-icon">👤🔌</div>
+                <div class="module-title">Electrician</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('InstallationMainModule')">
+                <div class="module-icon">❄️📹</div>
+                <div class="module-title">Installation</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('HomeApplianceMainModule')">
+                <div class="module-icon">🛠️</div>
+                <div class="module-title">Home Appliance</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('PlumberMainModule')">
+                <div class="module-icon">🚰</div>
+                <div class="module-title">Plumber</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('PainterMainModule')">
+                <div class="module-icon">🎨</div>
+                <div class="module-title">Painter</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('CarpenterMainModule')">
+                <div class="module-icon">🪚</div>
+                <div class="module-title">Carpenter</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('LaundryMainModule')">
+                <div class="module-icon">🧺</div>
+                <div class="module-title">Laundry</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('CustomerSupportMainModule')">
+                <div class="module-icon">💬</div>
+                <div class="module-title">Customer Support</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('AboutUsMainModule')">
+                <div class="module-icon">🙋‍♂️💬</div> <!-- Support / About Us icons -->
+                <div class="module-title">About Us</div>
+            </div>            
+
+        </div>    
+
+        <!-- Smaller Logout Button at Top-Right -->
+        <div class="logout">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>    
+    
+    <script src="BringUpLogin.js"></script>
+</body>
+</html>
